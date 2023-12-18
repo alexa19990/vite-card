@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+:root{
+    --linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --red: hsl(0, 100%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish: hsl(270, 3%, 87%);
+    --dark-grayish: hsl(279, 6%, 55%);
+    --very-dark: hsl(278, 68%, 11%);
+}
+
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.gradient-side {
+    height: 99.8vh;
+    width: 500px;
+    background: hsl(249, 99%, 64%);
+    z-index: 0;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.input-side{
+    position: absolute;
+    right: 25%;
+    top: 30%;
+}
+
+.input-boxName, .input-boxNumber{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.input-boxName input, .input-boxNumber input{
+    margin: 10px 0px;
+    border-radius: 8px;
+    height: 45px;
+    border: 1px solid var(--very-dark);
+}
+
+
+
+.info1, .info2{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.input-boxInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.info1-child{
+    display: flex;
+    flex-direction: row;
+}
+
+.info1-child input, .info2 input{
+    width: 70px;
+    height: 45px;
+    border: 1px solid var(--light-grayish);
+    border-radius: 8px;
+    margin: 10px 10px 10px 0px;
+}
+
+
+.info2 input{
+    width: 100%;
+}
+
+
+.confirm{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--very-dark);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.frontcard{
+    position: absolute;
+    display: flex;
+    width: 450px;
+    border-radius: 15px;
+    left: 250px;
+    top: 100px;
+    flex-direction: column;
+    background-color: hsl(278, 94%, 30%);
+    text-align: center;
+}
+
+.header{
+    margin-bottom: 50px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.circle1{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.circle2{
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.card-number{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    margin: 20px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.BackCard{
+    position: absolute;
+    left: 250px;
+    top: 500px;
+    display: flex;
+    width: 450px;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: rgb(189, 186, 186);
+}
+
+.back-header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cvc-bar{
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: 80px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+
+    background-color: var(--light-grayish);
+}
+
+.cvc-bar p{
+    margin-right: 20px; 
+}
